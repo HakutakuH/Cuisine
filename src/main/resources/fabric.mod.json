@@ -4,7 +4,10 @@
   "version": "${version}",
   "name": "Cuisine",
   "description": "",
-  "authors": [],
+  "authors": [
+    "HakutakuH",
+    "xiaomipe"
+  ],
   "contact": {
     "repo": "https://github.com/mituz/Cuisine"
   },
