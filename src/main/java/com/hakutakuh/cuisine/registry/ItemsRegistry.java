@@ -18,20 +18,30 @@ public enum ItemsRegistry{
     private Item item;
 
     ItemsRegistry(String itemid, Supplier<Item> itemSupplier){
+
         this.itemid = itemid;
         this.itemSupplier = itemSupplier;
+
     }
 
     public static void registerAll(){
+
         for (ItemsRegistry value : values()){
+
             Registry.register(Registries.ITEM,new Identifier(MOD_ID,value.itemid),value.get());
+
         }
     }
 
     public Item get() {
+
         if (item == null) {
+
             item = itemSupplier.get();
+
         }
+
         return item;
+
     }
 }
