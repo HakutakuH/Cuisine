@@ -1,5 +1,6 @@
 package com.hakutakuh.cuisine;
 
+import com.hakutakuh.cuisine.registry.BlocksRegistry;
 import com.hakutakuh.cuisine.registry.ItemsRegistry;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class Cuisine implements ModInitializer{
         LOGGER.info("Cuisine!");
 
         ItemsRegistry.registerAll();
+        BlocksRegistry.registerAll();
     }
 }
